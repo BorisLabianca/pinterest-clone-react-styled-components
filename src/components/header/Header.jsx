@@ -1,5 +1,12 @@
 import { FaPinterest } from "react-icons/fa";
-import { LogoContainer, StyledHeader } from "./Header.styled";
+import {
+  AuthButton,
+  AuthButtonsContainer,
+  LinkContainer,
+  LogoContainer,
+  StyledHeader,
+  StyledLink,
+} from "./Header.styled";
 import { Text } from "../../utils/Text.styled";
 
 const Header = () => {
@@ -11,6 +18,15 @@ const Header = () => {
           Pinterest
         </Text>
       </LogoContainer>
+      <LinkContainer>
+        <StyledLink as="a">About</StyledLink>
+        <StyledLink as="a">Business</StyledLink>
+        <StyledLink as="a">Blog</StyledLink>
+        <AuthButtonsContainer>
+          <AuthButton type="highlight">Log in</AuthButton>
+          <AuthButton>Sign up</AuthButton>
+        </AuthButtonsContainer>
+      </LinkContainer>
     </StyledHeader>
   );
 };
