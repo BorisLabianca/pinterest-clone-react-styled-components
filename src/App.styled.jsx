@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     -ms-bow-sizing:border-box;
-    background-color:${(props) => props.theme.background}
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 `;
