@@ -14,7 +14,7 @@ const Header = () => {
     <StyledHeader>
       <LogoContainer>
         <FaPinterest color="#E60022" size={33} />
-        <Text color="#E60022" as="h1" size="large" className="logo">
+        <Text colorType="pinterestColor" as="h1" size="large" className="logo">
           Pinterest
         </Text>
       </LogoContainer>
@@ -24,7 +24,7 @@ const Header = () => {
         <StyledLink as="a">Blog</StyledLink>
         <AuthButtonsContainer>
           <AuthButton type="highlight">Log in</AuthButton>
-          <AuthButton>Sign up</AuthButton>
+          <AuthButton colorType="signUpTextColor">Sign up</AuthButton>
         </AuthButtonsContainer>
       </LinkContainer>
     </StyledHeader>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FONTSIZES } from "./fontSizes";
 
 export const Text = styled.p`
@@ -9,4 +9,14 @@ export const Text = styled.p`
   &.logo {
     letter-spacing: -1px;
   }
+  ${({ colorType }) =>
+    colorType === "pinterestColor" &&
+    css`
+      color: ${(props) => props.theme.pinterestColor};
+    `}
+  ${({ colorType }) =>
+    colorType === "signUpTextColor" &&
+    css`
+      color: ${(props) => props.theme.signUpTextColor};
+    `}
 `;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Text } from "../../utils/Text.styled";
 
 export const StyledHeader = styled.div`
@@ -7,6 +7,9 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 1.2rem 1rem 0 1.8rem;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 `;
 
 export const LogoContainer = styled.div`
@@ -42,7 +45,7 @@ export const AuthButton = styled(Text)`
 
   ${({ type }) =>
     type === "highlight" &&
-    `
+    css`
       background-color: #e60022;
       color: white;
     `}

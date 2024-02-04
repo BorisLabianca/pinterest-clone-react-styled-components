@@ -7,4 +7,5 @@ export const StyledHome = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 94% 6%;
   background-color: ${(props) => props.theme.background};
+  position: relative;
 `;
