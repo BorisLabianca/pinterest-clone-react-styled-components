@@ -8,6 +8,7 @@ import {
 } from "./Body.styled";
 import { HEADINGS } from "../../utils/texts";
 import { Text } from "../../utils/Text.styled";
+import Tiles from "../tiles/Tiles";
 
 const Body = ({ toggleTheme }) => {
   const [currentHeadingsIndex, setCurrentHeadingsIndex] = useState(0);
@@ -28,9 +29,10 @@ const Body = ({ toggleTheme }) => {
           ))}
         </DotsContainer>
       </HeadingsContainer>
+      <Tiles currentHeadingsIndex={currentHeadingsIndex} />
       <StyledAnimatedIcon
         size={50}
-        bgColor={HEADINGS[1].color}
+        bgColor={HEADINGS[currentHeadingsIndex].color}
         onClick={toggleTheme}
       />
     </StyledBody>
