@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Dot,
   DotsContainer,
@@ -12,6 +12,16 @@ import Tiles from "../tiles/Tiles";
 
 const Body = ({ toggleTheme }) => {
   const [currentHeadingsIndex, setCurrentHeadingsIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCurrentHeadingsIndex((currentIndex) =>
+        currentIndex + 1 < 4 ? currentIndex + 1 : 0
+      );
+    }, 4000);
+    return () => clearInterval(id);
+  }, [currentHeadingsIndex]);
+
   return (
     <StyledBody>
       <HeadingsContainer>
