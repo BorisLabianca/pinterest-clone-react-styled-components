@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { FaSun } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export const StyledBody = styled.div`
   width: 100%;
@@ -24,6 +25,12 @@ export const DotsContainer = styled.div`
   margin-top: 2rem;
   display: flex;
   gap: 0.8rem;
+  margin-top: 7rem;
+`;
+
+export const AnimatedHeading = styled(motion.div)`
+  position: absolute;
+  top: 42%;
 `;
 
 export const Dot = styled.div.attrs(({ bgColor }) => ({
