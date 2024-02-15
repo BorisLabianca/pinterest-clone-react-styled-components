@@ -1,6 +1,6 @@
 # Pinterest Clone Frontend
 
-<img width="1725" alt="Screen capture" src="https://github.com/BorisLabianca/pinterest-clone-react-styled-components/assets/114598539/947ad582-d234-4f16-bb0e-89052df6e2cf">
+<img width="1725" alt="Screen capture" src="https://github.com/BorisLabianca/pinterest-clone-react-styled-components/assets/114598539/f4998625-7d03-4a62-ad84-9335b960df4e">
 
 ## Techs Used
 
