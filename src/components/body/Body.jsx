@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import {
   AnimatedHeading,
   Dot,
@@ -12,7 +12,7 @@ import { Text } from "../../utils/Text.styled";
 import Tiles from "../tiles/Tiles";
 import { AnimatePresence } from "framer-motion";
 
-const Body = ({ toggleTheme }) => {
+const Body = memo(({ toggleTheme }) => {
   const [currentHeadingsIndex, setCurrentHeadingsIndex] = useState(0);
 
   useEffect(() => {
@@ -68,6 +68,6 @@ const Body = ({ toggleTheme }) => {
       />
     </StyledBody>
   );
-};
+});
 
 export default Body;
